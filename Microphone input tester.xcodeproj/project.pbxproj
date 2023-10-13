@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30806BF62AD98AFA00B230F4 /* Microphone_input_testerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BF52AD98AFA00B230F4 /* Microphone_input_testerApp.swift */; };
+		30806BF82AD98AFA00B230F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BF72AD98AFA00B230F4 /* ContentView.swift */; };
+		30806BFA2AD98AFC00B230F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30806BF92AD98AFC00B230F4 /* Assets.xcassets */; };
+		30806BFD2AD98AFC00B230F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30806BFC2AD98AFC00B230F4 /* Preview Assets.xcassets */; };
+		30806C072AD98AFC00B230F4 /* Microphone_input_testerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C062AD98AFC00B230F4 /* Microphone_input_testerTests.swift */; };
+		30806C112AD98AFC00B230F4 /* Microphone_input_testerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C102AD98AFC00B230F4 /* Microphone_input_testerUITests.swift */; };
+		30806C132AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C122AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30806C032AD98AFC00B230F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30806BEA2AD98AFA00B230F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30806BF12AD98AFA00B230F4;
+			remoteInfo = "Microphone input tester";
+		};
+		30806C0D2AD98AFC00B230F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30806BEA2AD98AFA00B230F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30806BF12AD98AFA00B230F4;
+			remoteInfo = "Microphone input tester";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30806BF22AD98AFA00B230F4 /* Microphone input tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Microphone input tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30806BF52AD98AFA00B230F4 /* Microphone_input_testerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerApp.swift; sourceTree = "<group>"; };
+		30806BF72AD98AFA00B230F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30806BF92AD98AFC00B230F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30806BFC2AD98AFC00B230F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30806C022AD98AFC00B230F4 /* Microphone input testerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Microphone input testerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30806C062AD98AFC00B230F4 /* Microphone_input_testerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerTests.swift; sourceTree = "<group>"; };
+		30806C0C2AD98AFC00B230F4 /* Microphone input testerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Microphone input testerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30806C102AD98AFC00B230F4 /* Microphone_input_testerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerUITests.swift; sourceTree = "<group>"; };
+		30806C122AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30806BEF2AD98AFA00B230F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30806BFF2AD98AFC00B230F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30806C092AD98AFC00B230F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30806BE92AD98AFA00B230F4 = {
+			isa = PBXGroup;
+			children = (
+				30806BF42AD98AFA00B230F4 /* Microphone input tester */,
+				30806C052AD98AFC00B230F4 /* Microphone input testerTests */,
+				30806C0F2AD98AFC00B230F4 /* Microphone input testerUITests */,
+				30806BF32AD98AFA00B230F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30806BF32AD98AFA00B230F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30806BF22AD98AFA00B230F4 /* Microphone input tester.app */,
+				30806C022AD98AFC00B230F4 /* Microphone input testerTests.xctest */,
+				30806C0C2AD98AFC00B230F4 /* Microphone input testerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30806BF42AD98AFA00B230F4 /* Microphone input tester */ = {
+			isa = PBXGroup;
+			children = (
+				30806BF52AD98AFA00B230F4 /* Microphone_input_testerApp.swift */,
+				30806BF72AD98AFA00B230F4 /* ContentView.swift */,
+				30806BF92AD98AFC00B230F4 /* Assets.xcassets */,
+				30806BFB2AD98AFC00B230F4 /* Preview Content */,
+			);
+			path = "Microphone input tester";
+			sourceTree = "<group>";
+		};
+		30806BFB2AD98AFC00B230F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30806BFC2AD98AFC00B230F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30806C052AD98AFC00B230F4 /* Microphone input testerTests */ = {
+			isa = PBXGroup;
+			children = (
+				30806C062AD98AFC00B230F4 /* Microphone_input_testerTests.swift */,
+			);
+			path = "Microphone input testerTests";
+			sourceTree = "<group>";
+		};
+		30806C0F2AD98AFC00B230F4 /* Microphone input testerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30806C102AD98AFC00B230F4 /* Microphone_input_testerUITests.swift */,
+				30806C122AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift */,
+			);
+			path = "Microphone input testerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30806BF12AD98AFA00B230F4 /* Microphone input tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30806C162AD98AFC00B230F4 /* Build configuration list for PBXNativeTarget "Microphone input tester" */;
+			buildPhases = (
+				30806BEE2AD98AFA00B230F4 /* Sources */,
+				30806BEF2AD98AFA00B230F4 /* Frameworks */,
+				30806BF02AD98AFA00B230F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Microphone input tester";
+			productName = "Microphone input tester";
+			productReference = 30806BF22AD98AFA00B230F4 /* Microphone input tester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30806C012AD98AFC00B230F4 /* Microphone input testerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30806C192AD98AFC00B230F4 /* Build configuration list for PBXNativeTarget "Microphone input testerTests" */;
+			buildPhases = (
+				30806BFE2AD98AFC00B230F4 /* Sources */,
+				30806BFF2AD98AFC00B230F4 /* Frameworks */,
+				30806C002AD98AFC00B230F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30806C042AD98AFC00B230F4 /* PBXTargetDependency */,
+			);
+			name = "Microphone input testerTests";
+			productName = "Microphone input testerTests";
+			productReference = 30806C022AD98AFC00B230F4 /* Microphone input testerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30806C0B2AD98AFC00B230F4 /* Microphone input testerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30806C1C2AD98AFC00B230F4 /* Build configuration list for PBXNativeTarget "Microphone input testerUITests" */;
+			buildPhases = (
+				30806C082AD98AFC00B230F4 /* Sources */,
+				30806C092AD98AFC00B230F4 /* Frameworks */,
+				30806C0A2AD98AFC00B230F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30806C0E2AD98AFC00B230F4 /* PBXTargetDependency */,
+			);
+			name = "Microphone input testerUITests";
+			productName = "Microphone input testerUITests";
+			productReference = 30806C0C2AD98AFC00B230F4 /* Microphone input testerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30806BEA2AD98AFA00B230F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					30806BF12AD98AFA00B230F4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					30806C012AD98AFC00B230F4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 30806BF12AD98AFA00B230F4;
+					};
+					30806C0B2AD98AFC00B230F4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 30806BF12AD98AFA00B230F4;
+					};
+				};
+			};
+			buildConfigurationList = 30806BED2AD98AFA00B230F4 /* Build configuration list for PBXProject "Microphone input tester" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30806BE92AD98AFA00B230F4;
+			productRefGroup = 30806BF32AD98AFA00B230F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30806BF12AD98AFA00B230F4 /* Microphone input tester */,
+				30806C012AD98AFC00B230F4 /* Microphone input testerTests */,
+				30806C0B2AD98AFC00B230F4 /* Microphone input testerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30806BF02AD98AFA00B230F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30806BFD2AD98AFC00B230F4 /* Preview Assets.xcassets in Resources */,
+				30806BFA2AD98AFC00B230F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30806C002AD98AFC00B230F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30806C0A2AD98AFC00B230F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30806BEE2AD98AFA00B230F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30806BF82AD98AFA00B230F4 /* ContentView.swift in Sources */,
+				30806BF62AD98AFA00B230F4 /* Microphone_input_testerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30806BFE2AD98AFC00B230F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30806C072AD98AFC00B230F4 /* Microphone_input_testerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30806C082AD98AFC00B230F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30806C132AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift in Sources */,
+				30806C112AD98AFC00B230F4 /* Microphone_input_testerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30806C042AD98AFC00B230F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30806BF12AD98AFA00B230F4 /* Microphone input tester */;
+			targetProxy = 30806C032AD98AFC00B230F4 /* PBXContainerItemProxy */;
+		};
+		30806C0E2AD98AFC00B230F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30806BF12AD98AFA00B230F4 /* Microphone input tester */;
+			targetProxy = 30806C0D2AD98AFC00B230F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30806C142AD98AFC00B230F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30806C152AD98AFC00B230F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30806C172AD98AFC00B230F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Microphone input tester/Preview Content\"";
+				DEVELOPMENT_TEAM = NX45SC475G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-BaptistChristesen.Microphone-input-tester";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30806C182AD98AFC00B230F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Microphone input tester/Preview Content\"";
+				DEVELOPMENT_TEAM = NX45SC475G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-BaptistChristesen.Microphone-input-tester";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30806C1A2AD98AFC00B230F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX45SC475G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-BaptistChristesen.Microphone-input-testerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Microphone input tester.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Microphone input tester";
+			};
+			name = Debug;
+		};
+		30806C1B2AD98AFC00B230F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX45SC475G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-BaptistChristesen.Microphone-input-testerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Microphone input tester.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Microphone input tester";
+			};
+			name = Release;
+		};
+		30806C1D2AD98AFC00B230F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX45SC475G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-BaptistChristesen.Microphone-input-testerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Microphone input tester";
+			};
+			name = Debug;
+		};
+		30806C1E2AD98AFC00B230F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX45SC475G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-BaptistChristesen.Microphone-input-testerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Microphone input tester";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30806BED2AD98AFA00B230F4 /* Build configuration list for PBXProject "Microphone input tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30806C142AD98AFC00B230F4 /* Debug */,
+				30806C152AD98AFC00B230F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30806C162AD98AFC00B230F4 /* Build configuration list for PBXNativeTarget "Microphone input tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30806C172AD98AFC00B230F4 /* Debug */,
+				30806C182AD98AFC00B230F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30806C192AD98AFC00B230F4 /* Build configuration list for PBXNativeTarget "Microphone input testerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30806C1A2AD98AFC00B230F4 /* Debug */,
+				30806C1B2AD98AFC00B230F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30806C1C2AD98AFC00B230F4 /* Build configuration list for PBXNativeTarget "Microphone input testerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30806C1D2AD98AFC00B230F4 /* Debug */,
+				30806C1E2AD98AFC00B230F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30806BEA2AD98AFA00B230F4 /* Project object */;
+}
