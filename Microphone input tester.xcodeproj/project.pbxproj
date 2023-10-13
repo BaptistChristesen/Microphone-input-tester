@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		30806BF62AD98AFA00B230F4 /* Microphone_input_testerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BF52AD98AFA00B230F4 /* Microphone_input_testerApp.swift */; };
-		30806BF82AD98AFA00B230F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BF72AD98AFA00B230F4 /* ContentView.swift */; };
+		30806BF82AD98AFA00B230F4 /* MicrophoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BF72AD98AFA00B230F4 /* MicrophoneInputView.swift */; };
 		30806BFA2AD98AFC00B230F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30806BF92AD98AFC00B230F4 /* Assets.xcassets */; };
 		30806BFD2AD98AFC00B230F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30806BFC2AD98AFC00B230F4 /* Preview Assets.xcassets */; };
 		30806C072AD98AFC00B230F4 /* Microphone_input_testerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C062AD98AFC00B230F4 /* Microphone_input_testerTests.swift */; };
 		30806C112AD98AFC00B230F4 /* Microphone_input_testerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C102AD98AFC00B230F4 /* Microphone_input_testerUITests.swift */; };
 		30806C132AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C122AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift */; };
+		30806C202AD98E8600B230F4 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806C1F2AD98E8600B230F4 /* FFT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		30806BF22AD98AFA00B230F4 /* Microphone input tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Microphone input tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30806BF52AD98AFA00B230F4 /* Microphone_input_testerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerApp.swift; sourceTree = "<group>"; };
-		30806BF72AD98AFA00B230F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30806BF72AD98AFA00B230F4 /* MicrophoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneInputView.swift; sourceTree = "<group>"; };
 		30806BF92AD98AFC00B230F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30806BFC2AD98AFC00B230F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30806C022AD98AFC00B230F4 /* Microphone input testerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Microphone input testerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		30806C0C2AD98AFC00B230F4 /* Microphone input testerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Microphone input testerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30806C102AD98AFC00B230F4 /* Microphone_input_testerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerUITests.swift; sourceTree = "<group>"; };
 		30806C122AD98AFC00B230F4 /* Microphone_input_testerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone_input_testerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30806C1F2AD98E8600B230F4 /* FFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				30806BF52AD98AFA00B230F4 /* Microphone_input_testerApp.swift */,
-				30806BF72AD98AFA00B230F4 /* ContentView.swift */,
+				30806BF72AD98AFA00B230F4 /* MicrophoneInputView.swift */,
+				30806C1F2AD98E8600B230F4 /* FFT.swift */,
 				30806BF92AD98AFC00B230F4 /* Assets.xcassets */,
 				30806BFB2AD98AFC00B230F4 /* Preview Content */,
 			);
@@ -257,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30806BF82AD98AFA00B230F4 /* ContentView.swift in Sources */,
+				30806BF82AD98AFA00B230F4 /* MicrophoneInputView.swift in Sources */,
 				30806BF62AD98AFA00B230F4 /* Microphone_input_testerApp.swift in Sources */,
+				30806C202AD98E8600B230F4 /* FFT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

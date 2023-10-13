@@ -11,7 +11,7 @@ import SwiftUI
 struct Microphone_input_testerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MicrophoneInputView()
         }
     }
 }

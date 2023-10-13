@@ -8,13 +8,20 @@
 import SwiftUI
 import AVFoundation
 
-struct MicrophoneInputView: View {
+struct MicrophoneFrequencyView: View {
     @State private var isRecording = false
     @State private var audioRecorder: AVAudioRecorder?
+    @State private var audioEngine = AVAudioEngine()
+    @State private var audioPlayerNode = AVAudioPlayerNode()
     @State private var audioSession = AVAudioSession.sharedInstance()
+    @State private var micFrequency: Double = 0.0
 
     var body: some View {
         VStack {
+            Text("Microphone Frequency: \(micFrequency) Hz")
+                .font(.title)
+                .padding()
+            
             Button(action: {
                 if isRecording {
                     stopRecording()
@@ -35,17 +42,25 @@ struct MicrophoneInputView: View {
         do {
             try audioSession.setCategory(.record, mode: .default, options: [])
             try audioSession.setActive(true)
-
-            let audioSettings = [
-                AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue,
-                AVEncoderBitRateKey: 320000,
-                AVNumberOfChannelsKey: 2,
-                AVSampleRateKey: 44100.0
-            ] as [String : Any]
-
-            audioRecorder = try AVAudioRecorder(url: audioFileURL(), settings: audioSettings)
-            audioRecorder?.record()
+            
+            let inputNode = audioEngine.inputNode
+            let format = inputNode.inputFormat(forBus: 0)
+            
+            audioEngine.attach(audioPlayerNode)
+            audioEngine.connect(inputNode, to: audioPlayerNode, format: format)
+            
+            let audioMixer = audioEngine.mainMixerNode
+            let recordingFormat = AVAudioFormat(standardFormatWithSampleRate: 44100.0, channels: 1)
+            audioEngine.connect(audioPlayerNode, to: audioMixer, format: recordingFormat)
+            
+            audioPlayerNode.installTap(onBus: 0, bufferSize: 1024, format: format) { buffer, _ in
+                let fft = FFT(buffer: buffer)
+                let frequency = fft.calculateFrequency()
+                micFrequency = frequency
+            }
+            
+            try audioEngine.start()
+            
             isRecording = true
         } catch {
             // Handle errors
@@ -53,19 +68,8 @@ struct MicrophoneInputView: View {
     }
 
     func stopRecording() {
-        audioRecorder?.stop()
+        audioEngine.stop()
+        audioPlayerNode.removeTap(onBus: 0)
         isRecording = false
-    }
-
-    func audioFileURL() -> URL {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let audioFilename = documentsDirectory.appendingPathComponent("recording.m4a")
-        return audioFilename
-    }
-}
-
-struct MicrophoneInputView_Previews: PreviewProvider {
-    static var previews: some View {
-        MicrophoneInputView()
     }
 }
