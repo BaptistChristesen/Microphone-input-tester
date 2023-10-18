@@ -8,14 +8,13 @@
 import SwiftUI
 import AVFoundation
 
-struct MicrophoneFrequencyView: View {
+struct MicrophoneInputView: View {
     @State private var isRecording = false
     @State private var audioRecorder: AVAudioRecorder?
     @State private var audioEngine = AVAudioEngine()
     @State private var audioPlayerNode = AVAudioPlayerNode()
-    @State private var audioSession = AVAudioSession.sharedInstance()
     @State private var micFrequency: Double = 0.0
-
+    
     var body: some View {
         VStack {
             Text("Microphone Frequency: \(micFrequency) Hz")
@@ -26,7 +25,7 @@ struct MicrophoneFrequencyView: View {
                 if isRecording {
                     stopRecording()
                 } else {
-                    startRecording()
+                    requestMicrophonePermissionAndStartRecording()
                 }
             }) {
                 Text(isRecording ? "Stop Recording" : "Start Recording")
@@ -37,9 +36,20 @@ struct MicrophoneFrequencyView: View {
             }
         }
     }
-
+    
+    func requestMicrophonePermissionAndStartRecording() {
+        AVAudioApplication.requestRecordPermission { (granted: Bool) in
+            if granted {
+                startRecording()
+            } else {
+                // Handle the case where permission is not granted
+            }
+        }
+    }
+    
     func startRecording() {
         do {
+            let audioSession = AVAudioSession.sharedInstance()
             try audioSession.setCategory(.record, mode: .default, options: [])
             try audioSession.setActive(true)
             
@@ -63,11 +73,12 @@ struct MicrophoneFrequencyView: View {
             
             isRecording = true
         } catch {
-            // Handle errors
+            // Handle errors, e.g., if audio permissions are denied
         }
     }
-
+    
     func stopRecording() {
+        // Stop the audio engine and remove the tap
         audioEngine.stop()
         audioPlayerNode.removeTap(onBus: 0)
         isRecording = false
